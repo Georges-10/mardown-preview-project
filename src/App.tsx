@@ -10,10 +10,11 @@ function App() {
     setTextMarkDown(textAreaRef.current?.value);
   };
   useEffect(() => {
+    handleChange();
+
     if (textAreaRef.current) {
       textAreaRef.current?.focus();
     }
-    handleChange();
   }, []);
 
   return (
